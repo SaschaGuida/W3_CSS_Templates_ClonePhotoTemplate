@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>PHOTOLIO</title>
+</head>
+<body>
+        <!-- SIDEBAR MENU -->
+<!--     <div class="sidebar">
+        <div class="menu-sidebar">
+            <div class="container">
+                <div class="barraNav">
+                    <div class="logo">
+                        <h1>left</h1>
+                    </div>
+                    <ul class="menu1">
+                        <li>Home</li>
+                        <li>Prodotti</li>
+                        <li>Chi siamo</li>
+                        <li>Contatti</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="menu">
+        <div class="hamburger" id="hamburger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <a href="#">Podcast</a>
+            <a href="#">Newsletter</a>
+            <a href="#">Shop</a>
+    </div>
+
+
+    <!-- CONTENUTO -->
+    <div class="content">
+        <div class="top">
+            <h1>Lauren's photolio</h1>
+            <h3>Capturing moments of life and turning them into visual eternities, my aim is to tell wordless stories through the lens of my soul.</h3>
+        </div>
+    </div>
+
+    <div class="gallery">
+            <div class="column-left">
+                <img src="./img/img1.jpg" alt="">
+                <img src="./img/img2.jpg" alt="">
+                <img src="./img/img3.jpg" alt="">
+                <img src="./img/img4.jpg" alt="">
+                <img src="./img/12.jpg" alt="">
+                <img src="./img/13.jpg" alt="">
+            </div>
+            <div class="column-center">
+                <img src="./img/img5.jpg" alt="">
+                <img src="./img/img6.jpg" alt="">
+                <img src="./img/img7.jpg" alt="">
+                <img src="./img/img8.jpg" alt="">
+                <img src="./img/img9.jpg" alt="">
+                <img src="./img/10.jpg" alt="">
+            </div>
+            <div class="column-right">
+                <img src="./img//11.jpg" alt="">
+                <img src="./img/12.jpg" alt="">
+                <img src="./img/13.jpg" alt="">
+                <img src="./img/14.jpg" alt="">
+                <img src="./img/15.jpg" alt="">
+                <img src="./img/16.jpg" alt="">
+                <img src="./img/17.jpg" alt="">
+            </div>
+    </div>
+
+
+    <!-- FOOTER -->
+
+        <div class="footer">
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <h4>Powered by Sascha</h4>
+        </div>
+
+        <script>
+            var hamburgerBtn = document.getElementById('hamburger-btn');
+            var menuItems = document.querySelectorAll('.menu a');
+            var menuOverlay = document.createElement('div');
+            menuOverlay.classList.add('menu-overlay');
+
+            hamburgerBtn.addEventListener('click', function() {
+                var menu = document.querySelector('.menu');
+                menu.classList.toggle('active');
+                document.body.classList.toggle('menu-open');
+
+                if (menu.classList.contains('active')) {
+                    document.body.appendChild(menuOverlay);
+                } else {
+                    document.body.removeChild(menuOverlay);
+                }
+            });
+        </script>
+
+</body>
+</html>
